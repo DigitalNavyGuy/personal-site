@@ -1,0 +1,161 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: #C1CCFE;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    background-color: blue;
+    width: 80%;
+    margin: auto;
+}
+
+/* Navigation */
+
+nav{
+    height: 75px;
+    background: black;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px 0 0;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+nav a{
+    padding: 0 32px;
+    color: white;
+    transition: 0.4s; 
+}
+
+nav a:hover{
+    color: blue;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+.active{
+    color: blue;
+}
+
+#logo-img{
+    display: flex;
+    height: 100%;
+    background: black;
+    padding: 0 32px;
+    align-items: center;
+    color: white;
+    transition: 0.4s;
+}
+
+#logo-img img{
+    height: 100px;
+    margin: 0;
+}
+
+#logo-img:hover{
+    background: black;
+}
+
+#logo-img a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Section */
+
+section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 75px;
+}
+
+.intro p{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+    float: left;
+    display: block;
+    width: 50%;
+    padding: 0 15px;
+}
+
+section img{
+    width: 300px;
+    float: right;
+    padding: 20px;
+}
+
+.quote{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 24px;
+    width: 75%;
+}
+
+.quote p cite{
+    float: right;
+}
+
+footer{
+    font-size: 28px;
+    background: black;
+    color: white;
+    padding: 8px;
+    text-align: center;
+}
+ footer ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0
+ }
+
+ #social-media a .fa-facebook-square,
+ .fa-linkedin-in, .fa-github{
+    font-size: 48px;
+    padding: 16px;
+    color: white;
+    transition: 0.4s;
+    
+ }
+
+ #social-media ul li:hover a .fa-facebook-square{
+    color: blue;
+ }
+
+ #social-media ul li:hover a .fa-linkedin-in{
+    color: #3B5998;
+ }
+
+ #social-media ul li:hover a .fa-github{
+    color: #BBB;
+ }
+
+
+
+ 
+
