@@ -161,12 +161,8 @@ footer{
 
 
 
- .form-container{
-    display: flex;
-    height: 100vh;
-    margin: auto;
- }
-
  #contact-form{
+    box-sizing: border-box;
+    border: 1px solid black;
     margin: auto;
  }
