@@ -38,18 +38,25 @@ a{
     margin: 0;
 }
 
+.active a{
+    background-color: blue;
+    padding: 2.2rem 1.5rem;
+    margin: 0;
+}
+
 .nav-menu a:hover{
     border-bottom: 7px solid blue;
     padding-bottom: 1.8rem;
 }
 
 .container{
-    width: 1280px;
+    width: 100%;
     margin: auto;
 }
 
 .navbar{
-    width: 95%;
+    background-color: black;
+    width: 100%;
     margin: auto;
     height: 100px;
     display: flex;
@@ -78,16 +85,26 @@ a{
 }
 
 .main-section{
-    background-color: red;
-    width: 100%;
-    margin: 100px 60px 0px 60px;
+    height: 100vh;
+    background-color: #0B088B;
+    /* width: 100%; */
+    margin: 100px 150px 0px 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.about-main-section{
+    height: 100vh;
+    background-color: #0B088B;
+    /* width: 100%; */
+    margin: 0px 150px 0px 150px;
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
 
 .container1{
-    background-color: green;
     padding-left: 30px;
     padding-right: 30px; 
     display: flex;
@@ -95,9 +112,6 @@ a{
     justify-content: space-evenly;
 }
 .container2{
-    background-color: yellow;
-    margin-right: 60px;
-    /* width: 50%; */
     display: flex;
     flex-grow: 1;
     flex-direction: column;
@@ -105,7 +119,7 @@ a{
 }
 
 .container2 .image{
-    width: 300px;
+    width: 200px;
     height: 300px;
     margin-top: 50px;
     padding-left: 100px;
