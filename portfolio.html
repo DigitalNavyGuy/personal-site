@@ -4,75 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/de008441f7.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Personal Site</title>
 </head>
 <body>
-    <nav>
-        <div id="logo-img">
-            <a href="http://127.0.0.1:5500/index.html">
-                <img src="Images/logo.png" alt="DigitalNavyGuy logo">
-            </a>
+    <header>
+        <nav class="site-nav grid">
+            <div class="brand">
+                <a href="index.html" class="logo">
+                <img id="logo" src="img/logo.png" alt="">
+                </a>
+            </div>
             <h1>John Fuller</h1>
+            <ul class="nav-menu">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="portfolio">
+        <h3>Some of My Projects</h3>
+        <div class="portfolio grid">
+            <a href="https://rehabwellmbs.com/">
+                <img src="img/MBSRehabWell.jpeg" alt="">
+                <h4>Mind, Body, and Soul Total Rehabilitation and Wellness Clinic</h4>
+            </a>
         </div>
-        <ul>
-            <li>
-                <a href="http://127.0.0.1:5500/index.html">Home</a>
-            </li>
-            <li>
-                <a href="http://127.0.0.1:5500/about.html">About</a>
-            </li>
-            <li>
-                <a class="active" href="http://127.0.0.1:5500/portfolio.html">Portfolio</a>
-            </li>
-        </ul>
-    </nav>
-
-    <main>
-        <div class="container">
-            <section>
-                <h1>These are a couple of web designs I've created following tutorials and learning how to code.</h1> 
-                <hr>
-                <div id="section-1">
-                    <h2>Fictional University</h2>
-                    <p>This is a custom Wordpress theme that I am currently making from a tutorial. The theme includes custom post types.</p>
-                    <img src="Images/Fictional University.jpeg" alt="screenshot of a website">
-                </div>
-                <hr>
-                <div id="section-2">
-                    <h2>The K Luxury Experience</h2>
-                    <p>This is a digital business card for a cousin. Complete with shareable QR code, link to her booking site, and some examples of her work.</p>
-                    <a href="https://thekluxuryexperience.com/business-card/"><img src="Images/TheKBridalExperience.jpeg" alt="screenshot of website"></a>
-                </div>
-                <hr>
-                <div id="section-3">
-                    <h2>Rehab Well Mind, Body & Soul</h2>
-                    <p>This is a website I designed from a template for my cousin's business. </p>
-                    <a href="https://rehabwellmbs.com/"><img src="Images/MBSRehabWell.jpeg" alt="screenshot a of website"></a>
-                </div>
-                <hr>
-            </section>         
+        <div class="portfolio grid">
+            <a href="https://thekluxuryexperience.com/">
+                <img src="img/TheKBridalExperience.jpeg" alt="">
+                <h4>The K Bridal Experience</h4>
+            </a>
         </div>
-    </main>
-   
+        <div class="portfolio grid">
+            <a href="">
+                <img src="img/Fictional University.jpeg" alt="">
+                <h4>Fictional University Theme</h4>
+            </a>
+        </div>
+    </section>
     <footer>
-        <div id="social-media">
-            <ul>
+        <div class="grid">
+            <p class="follow-me">Follow me on:</p>
+            <ul class="social">
                 <li>
-                    <a href="https://www.facebook.com/">
-                        <i class="fab fa-facebook-square"></i>
-                    </a>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/john-fuller-201a03113/">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
+                    <a href="https://www.linkedin.com/in/john-fuller-201a03113/"><i class="fab fa-linkedin-in"></i></a>
                 </li>
                 <li>
-                    <a href="https://github.com/DigitalNavyGuy">
-                        <i class="fab fa-github"></i>
-                    </a>
+                    <a href="https://github.com/DigitalNavyGuy"><i class="fab fa-github-square"></i></a>
                 </li>
             </ul>
         </div>
