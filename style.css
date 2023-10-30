@@ -1,4 +1,314 @@
-*{
+/* Variables */
+
+:root{
+    --background: #0A0B5B;
+    --blue: #130EEB;
+}
+
+/* Reset */
+
+body, p, a, ul, li{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+} 
+
+li{
+    list-style-type: none;
+}
+
+
+/* Base Styles */
+
+body{
+    background: var(--blue);
+    overflow-x: hidden;
+}
+
+.button{
+    background: none;
+    border: 2px solid gold;
+    color: gold;
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+    display: inline-block;
+}
+
+.button:hover{
+    color: var(--background);
+    background: gold;
+}
+
+input, textarea{
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px, 16px;
+    border-radius: 20px;
+    border: 2px solid #9893d8;
+    color: #f2f2f2;
+}
+
+h1, h2, h3, h4, p, a, cite{
+    color: white;
+    font-family: 'Roboto Serif';
+}
+
+h1, h3{
+    font-size: 1.2em;
+}
+
+h2{
+    font-size: 1.6em;
+}
+
+h4{
+    font-size: 1.1em;
+}
+
+.leading{
+    font-size: 1.1em;
+}
+
+#logo{
+    height: 100px;
+}
+
+nav .brand{
+    height: 100px;
+}
+
+/* Mobile Styles */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+}
+
+header{
+    /* display: flex; */
+    background: black;
+    position: fixed;
+}
+
+.site-nav{
+    margin: 0 20px;
+}
+
+.site-nav ul{
+    display: grid;
+    grid-column: 6/8;
+}
+
+.site-nav h1{
+    grid-column: 2/4;
+    justify-self: center;
+    align-self: center;
+    padding-bottom: 10px;
+    border-bottom: 3px solid red;
+}
+
+#welcome{
+    padding: 100px 20px 20px 20px;
+    height: 75vh;
+}
+
+.welcome-text{
+    grid-column: 1/6;
+    grid-row: 2;
+}
+
+.welcome-img{
+    /* height: 200px;
+    width: 150px; */
+    grid-column: 6/9;
+    grid-row: 2;
+}
+
+.welcome-img img{
+    width: 100%;
+}
+
+.welcome-quote{
+    grid-column: 5/9;
+    grid-row: 3;
+    /* align-self: right ; */
+}
+
+#about{
+    padding: 100px 20px 30px 20px;
+}
+
+#about h3{
+    text-align: center;
+}
+
+#about{
+    grid-row: 4;
+    grid-column: span 8;
+}
+
+#about img{
+    margin: 10px auto;
+    grid-column: span 4;
+}
+
+.about-section{
+    display: flex;
+}
+
+.about-section p{
+    grid-column: span 3;
+}
+
+.about-img img{
+    grid-column: span 4;
+    width: 50%;
+}
+
+#portfolio{
+    padding: 100px 20px 30px 20px;
+    height: 75vh;
+
+}
+
+#portfolio h3{
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.portfolio a{
+    grid-column: 1/9;
+    margin: 20px 0;
+    display: flex;
+}
+
+.portfolio a *{
+    margin: 0 20px;
+    max-width: 40%;
+    align-self: center;
+}
+
+.portfolio h4{
+    color: white;
+}
+
+#contact{
+    padding: 100px 20px 30px 20px;
+}
+
+#contact h3, #contact p{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#contact form{
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#contact input, #contact textarea{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0px 10px 15px;
+}
+
+#contact .button{
+    margin-top: 10px;
+}
+
+footer{
+    padding: 30px 20px;
+    background-color: black;
+}
+
+footer li{
+    margin: 0 6px;
+    padding: 5px;
+}
+
+footer .follow-me{
+    grid-column: 1/4;
+    font-size: 0.8em;
+    align-self: center;
+}
+
+footer .social{
+    display: flex;
+    grid-column: 4/9;
+    font-size: 2em;
+}
+
+.fa-facebook-square,
+ .fa-linkedin-in, .fa-github-square{
+    transition: 0.4s;
+ }
+
+ a:hover .fa-facebook-square{
+    color: blue;
+ }
+
+ a:hover .fa-linkedin-in{
+    color: #3B5998;
+ }
+
+ a:hover .fa-github-square{
+    color: #BBB;
+ }
+
+
+
+
+
+/* Small Tablet Styles */
+@media screen and (min-width: 620px) {
+    
+} 
+
+/* Large Tablet and Laptop Styles */
+@media screen and (min-width: 960px) {
+    body{
+        font-size: 18px;
+    }
+} 
+
+/* Desktop Styles */
+@media screen and (min-width: 1200px) {
+    body{
+        font-size: 20px;
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *{
     margin: 0;
     padding: 0;
 }
@@ -87,7 +397,6 @@ a{
 .main-section{
     height: 100vh;
     background-color: #0B088B;
-    /* width: 100%; */
     margin: 100px 150px 0px 150px;
     display: flex;
     justify-content: center;
@@ -97,7 +406,6 @@ a{
 .about-main-section{
     height: 100vh;
     background-color: #0B088B;
-    /* width: 100%; */
     margin: 0px 150px 0px 150px;
     display: flex;
     justify-content: center;
@@ -148,27 +456,11 @@ footer ul{
     margin: 0;
 }
 
-.fa-facebook-square,
- .fa-linkedin-in, .fa-github-square{
-    font-size: 48px;
-    padding: 16px;
-    color: white;
-    transition: 0.4s;
- }
 
- a:hover .fa-facebook-square{
-    color: blue;
- }
 
- a:hover .fa-linkedin-in{
-    color: #3B5998;
- }
-
- a:hover .fa-github-square{
-    color: #BBB;
- }
+ 
 
 footer li{
     display: flex;
     gap: 40px;
-}
+} */
